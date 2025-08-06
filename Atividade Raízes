@@ -1,0 +1,12 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim().split("\n");
+
+// Seu código vai aqui
+const N = Number(input[0]);
+const numeros = input[1].split(" ").map(Number);
+
+for (let i = 0; i < N; i++) {
+  let raiz = Math.sqrt(numeros[i]);
+  console.log(raiz.toFixed(4));
+}
