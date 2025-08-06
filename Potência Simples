@@ -1,0 +1,12 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim();
+
+// Seu código vai aqui
+const valores = input.split(" ");
+
+let X = Number(valores[0]);
+let Y = Number(valores[1]);
+
+let potencia = X ** Y;
+console.log(potencia.toFixed(4));
