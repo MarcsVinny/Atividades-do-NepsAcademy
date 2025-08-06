@@ -1,0 +1,18 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim().split("\n");
+
+// Seu código vai aqui
+let N1 = Number(input[0]);
+let N2 = Number(input[1]);
+
+// Média ponderada: (N1 * 2 + N2 * 3) / 5
+let mediaFinal = (N1 * 2 + N2 * 3) / 5;
+
+if (mediaFinal >= 7.0) {
+  console.log("Aprovado");
+} else if (mediaFinal < 3.0) {
+  console.log("Reprovado");
+} else {
+  console.log("Final");
+}
