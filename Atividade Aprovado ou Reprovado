@@ -1,0 +1,19 @@
+//Ler as entradas
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim();
+
+let valores = input.split(" ");
+
+let A = parseFloat(valores[0]);
+let B = parseFloat(valores[1]);
+
+//seu código vai aqui
+let media = (A + B) / 2;
+
+if (media > 7) {
+    console.log("Aprovado");
+} else if (media >= 4) {
+    console.log("Recuperacao");
+} else {
+    console.log("Reprovado");
+}
